@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Background Remover</title>
-  <script type="module" crossorigin src="./assets/index-oTKuMcOq.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DOtjlr6C.css">
+  <script type="module" crossorigin src="./assets/index-BSHen-DK.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-qDPoRl6P.css">
 </head>
 <body>
 <div class="card">
@@ -16,7 +16,6 @@
     <input type="file" accept="image/*" id="fileInput">
     <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8b90a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
     <span class="name" id="dropLabel">Upuść grafikę lub kliknij</span>
-    <span class="size hidden" id="fileSize"></span>
   </label>
 
   <div class="progress hidden" id="progressWrap"><div class="progress-bar" id="progressBar"></div></div>
@@ -30,7 +29,7 @@
     <div class="preview-box">
       <div class="label">Bez tła</div>
       <div class="result-wrap checkerboard">
-        <img id="resultImg">
+        <canvas id="resultCanvas"></canvas>
       </div>
     </div>
   </div>
